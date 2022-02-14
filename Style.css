@@ -1,0 +1,192 @@
+* 
+h1 {
+    font-family: fantasy;
+    font-size: 400%;
+    font-style: normal;
+}  
+body {
+    overflow-x: hidden;
+    background-color:aquamarine;
+}
+img {
+    padding-left: 5px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    float: left;
+}
+.homebtn a {
+    border: 1px solid black;
+    background-color: whitesmoke;
+}
+header{
+    background-color:burlywood;
+    padding: 10px 0;
+}
+header nav{
+    float: right;
+}
+header:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+header nav li{
+    list-style-type: none;
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: solid dotted;
+}
+header nav li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(27, 61, 61);
+    text-transform: uppercase;
+    padding-right: 20px;
+}
+h2{
+    font-size:xx-large;
+}
+#anger{
+    margin: 10px;
+}
+#anger li{
+    float:left;
+    width: 30%;
+    padding: 10px;
+    text-align: center;
+    list-style-type: none;
+}
+#anger li img{
+    height: 65px;
+    padding: 9px;
+    border-radius: 50px;
+     
+}
+#anger li h2{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    font-weight: 200px;
+}
+#anger:after{
+    display: block;
+    clear: both;
+    content: "";
+}
+hr{
+    opacity: 50%;
+}
+.footerSection{
+    width: 96%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+footer{
+    width: 97%;
+    background-color: darkcyan;
+    margin:10px;
+    padding-top:0.1em;
+    padding-left: 10px;
+    padding-bottom:10px;
+    padding-right:10px;
+}
+footer ul{
+    width: 100%;
+    margin:1%;
+}
+footer ul h3{
+    font-size: 35px;
+    color: azure;
+    padding-right: 100px;
+    padding-top: 90px;
+}
+footer ul li{
+    list-style-type: none;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    color:azure;
+    padding-right: 102px;
+}
+footer ul:after{
+    content: "";
+    clear: both;
+    display:block;
+}
+.footerImages img {
+    position: center;
+    padding-left: 20px;
+}
+#main-banner {
+    width: 100%;
+    max-height: 500px;
+    overflow: hidden;
+}
+#main-banner img {
+    width: 100%;
+} 
+#anger-slides {
+    overflow: hidden;
+}
+#images {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    text-align: left;
+    font-size: 0;
+    animation: 5s slidy infinite;
+}
+#images img {
+    width: 20%;
+}
+/* Animation */
+@keyframes slidy{
+    0%{left: 0%}
+    25%{left: 0%}
+    30%{left: -100%}
+    55%{left: -100%}
+    60%{left:-200%}
+    95%{left: -200%}
+    100%{left: 0%}
+}
+/* DROPDOWN BUTTON */
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+/* THE CONTAINER <DIV>-NEEDED TO POSITION THE DROPDOWN CONTENT */
+.footerSection {
+    position: relative;
+    display: inline block;
+}
+/* DROPDOWN COMMENT (HIDDEN BY DEFAULT) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: white;}
+  
+  /* Show the dropdown menu on hover */
+  .footerSection:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .footerSection:hover .dropbtn {background-color: #3e8e41;}
+  
